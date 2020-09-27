@@ -9,11 +9,9 @@ public class HowFarAway
       Scanner in = new Scanner(System.in);
 
       //Provides a variable of latitude and longitude
-      double theLatitude = 0.0, theLongitude = 0.0;
       double startLatitude, startLongitude;
       double endLatitude, endLongitude;
-      double other;
-      double GeoLocation;
+      double distanceFrom;
 
       /*Asks the user to input the latitude and longitude
       for both the starting location and the ending location*/
@@ -27,13 +25,12 @@ public class HowFarAway
       endLongitude = in.nextDouble();
 
       //Adds a new construction
-      GeoLocation philip = new GeoLocation(startLatitude,endLongitude);
+      GeoLocation philip = new GeoLocation(startLatitude,startLongitude);
 
-      //Computes the distance in miles between the two locations
-      other = philip.getLatitude() + philip.getLongitude();
+      GeoLocation wilbur = new GeoLocation(endLatitude, endLongitude);      
 
       //Prints out the distance
-      System.out.println("The distance is " + philip.distanceFrom(other) + " miles.");
+      System.out.println("The distance is " + philip.distanceFrom(wilbur) + " miles.");
 
     }//Ends the main constructor
 }//Ends the HowFarAway class
