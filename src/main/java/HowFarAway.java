@@ -15,13 +15,13 @@ public class HowFarAway
 
       /*Asks the user to input the latitude and longitude
       for both the starting location and the ending location*/
-      System.out.println("Enter the latitude of the starting location: ");
+      System.out.print("Enter the latitude of the starting location: ");
       startLatitude = in.nextDouble();
-      System.out.println("Enter the longitude of the starting location: ");
+      System.out.print("Enter the longitude of the starting location: ");
       startLongitude = in.nextDouble();
-      System.out.println("Enter the latitude of the ending location: ");
+      System.out.print("Enter the latitude of the ending location: ");
       endLatitude = in.nextDouble();
-      System.out.println("Enter the longitude of the ending location: ");
+      System.out.print("Enter the longitude of the ending location: ");
       endLongitude = in.nextDouble();
 
       //Adds a new construction
